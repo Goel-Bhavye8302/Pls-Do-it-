@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         if(Firebase.auth.currentUser != null){
             setContent {
                 PlsDoItTheme {
-//                    Navigation(context = this, start = Screen.Main.route)
+//                    Navigation(this, Screen.Login.route)
                     BottomNavigation(this);
                 }
             }
@@ -30,6 +30,7 @@ class MainActivity : ComponentActivity() {
             setContent {
                 PlsDoItTheme {
                     Navigation(this, Screen.Login.route)
+//                    BottomNavigation(this);
                 }
             }
         }

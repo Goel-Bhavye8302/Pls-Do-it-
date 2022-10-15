@@ -83,7 +83,8 @@ fun Login(navController: NavController, context: ComponentActivity){
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d("ChechAuth", "signInWithEmail:success")
                                 Toast.makeText(context, "Welcome!", Toast.LENGTH_SHORT).show()
-                                navController.navigate(BottomNav.Main.route)
+                                context.finish()
+                                context.startActivity(context.intent)
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w("CheckAuth", "signInWithEmail:failure", task.exception)
