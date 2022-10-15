@@ -2,6 +2,7 @@ package com.ai.game.plsdoit
 
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -11,6 +12,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -23,19 +25,14 @@ fun MainScreen(){
     val checkedState1 = remember { mutableStateOf(false) }
     val checkedState2 = remember { mutableStateOf(false) }
     Column(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize().background(Color(234, 234,234)).padding(top = 10.dp)
     ) {
-        Text(
-            text = "Tasks",
-            fontSize = 18.sp,
-            modifier = Modifier.fillMaxWidth().padding(top = 3.dp),
-            textAlign = TextAlign.Center
-        )
         Card(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            elevation = 4.dp
+            elevation = 4.dp,
+            backgroundColor = Color(175, 248, 219)
         ) {
             Column{
                 Row(
@@ -77,7 +74,8 @@ fun MainScreen(){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            elevation = 4.dp
+            elevation = 4.dp,
+            backgroundColor = Color(167, 154, 255)
         ) {
             Column{
                 Row(
@@ -115,17 +113,13 @@ fun MainScreen(){
                 }
             }
         }
-        Text(
-            text = "Notes",
-            fontSize = 18.sp,
-            modifier = Modifier.fillMaxWidth(),
-            textAlign = TextAlign.Center
-        )
+        Spacer(modifier = Modifier.height(8.dp))
         Card(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            elevation = 4.dp
+            elevation = 4.dp,
+            backgroundColor = Color(187, 212, 255)
         ) {
             Column{
                 Text(
@@ -146,7 +140,8 @@ fun MainScreen(){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            elevation = 4.dp
+            elevation = 4.dp,
+            backgroundColor = Color(255, 171, 171)
         ) {
             Column{
                 Text(

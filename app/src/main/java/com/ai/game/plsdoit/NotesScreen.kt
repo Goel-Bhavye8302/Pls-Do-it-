@@ -2,6 +2,7 @@ package com.ai.game.plsdoit
 
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -9,6 +10,7 @@ import androidx.compose.material.icons.filled.DateRange
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -20,13 +22,14 @@ import com.ai.game.plsdoit.ui.theme.PlsDoItTheme
 @Composable
 fun NoteScreen(){
     Column(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize().background(Color(234, 234,234))
     ) {
         Card(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            elevation = 4.dp
+            elevation = 4.dp,
+            backgroundColor = Color(187, 212, 255)
         ) {
             Column{
                 Text(
@@ -47,7 +50,8 @@ fun NoteScreen(){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            elevation = 4.dp
+            elevation = 4.dp,
+            backgroundColor = Color(255, 229, 180)
         ) {
             Column{
                 Text(
@@ -71,10 +75,3 @@ fun NoteScreen(){
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    PlsDoItTheme {
-        NoteScreen()
-    }
-}

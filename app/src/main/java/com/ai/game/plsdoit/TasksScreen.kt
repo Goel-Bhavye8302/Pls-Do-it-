@@ -2,6 +2,7 @@ package com.ai.game.plsdoit
 
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -11,6 +12,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -26,13 +28,14 @@ fun TaskScreen(){
     val checkedState1 = remember { mutableStateOf(false) }
     val checkedState2 = remember { mutableStateOf(false) }
     Column(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize().background(Color(234, 234,234))
     ) {
         Card(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            elevation = 4.dp
+            elevation = 4.dp,
+            backgroundColor = Color(133,227,255)
         ) {
             Column{
                 Row(
@@ -74,7 +77,8 @@ fun TaskScreen(){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
-            elevation = 4.dp
+            elevation = 4.dp,
+            backgroundColor = Color(255,171,171)
         ) {
             Column{
                 Row(
@@ -120,4 +124,11 @@ fun TaskScreen(){
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun DefaultPreview() {
+    PlsDoItTheme {
+        TaskScreen()
+    }
+}
 
