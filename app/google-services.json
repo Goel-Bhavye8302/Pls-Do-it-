@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "124617789706",
+    "project_id": "pls-do-it-f27fe",
+    "storage_bucket": "pls-do-it-f27fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124617789706:android:ec1f70138224cccbec2af3",
+        "android_client_info": {
+          "package_name": "com.ai.game.plsdoit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124617789706-9ajiv34qgjd5hj70kdn61tin557t2odq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsTH3jYRIX1utDuc-lFhn2HRNhjoAFW7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124617789706-9ajiv34qgjd5hj70kdn61tin557t2odq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
